@@ -67,15 +67,6 @@ uvicorn app.main:app --reload
 pytest -q
 ```
 
-## Deploy on Render
-
-1. In Render, select **New → Blueprint**.
-2. Connect this repository.
-3. Render detects `render.yaml`; select **Apply**.
-4. When deployment finishes, open the generated `.onrender.com` address.
-
-The free Render service may sleep after inactivity, so the first request can take approximately one minute.
-
 ## Responsible-use notes
 
 - Training records are generated deterministically for demonstration and are not a clinical study dataset.
@@ -86,4 +77,3 @@ The free Render service may sleep after inactivity, so the first request can tak
 ## Technology
 
 Python 3.12 · FastAPI · Pydantic · NumPy · scikit-learn · pytest · Docker · GitHub Actions · Render
-

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive clinical data pipeline and predictive analytics engineering demo">
+  <title>Clinical Data Pipeline & Predictive Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header><a class="brand" href="/"><span>+</span> Clinical Analytics Lab</a><div class="status"><i></i> MODEL ONLINE</div></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">END-TO-END ML ENGINEERING DEMO</p><h1>Clinical Data Pipeline<br><em>& Predictive Analytics</em></h1>
+      <p class="intro">Explore how clinical indicators move through validation, transformation, predictive modeling, and patient segmentation—all with synthetic demonstration data.</p></div>
+      <div class="hero-card"><span>Pipeline health</span><strong>Operational</strong><div class="pulse"></div><small>Model and API ready</small></div>
+    </section>
+    <section class="pipeline" aria-label="Pipeline stages">
+      <div><b>01</b><span>Ingest</span></div><i>→</i><div><b>02</b><span>Validate</span></div><i>→</i><div><b>03</b><span>Transform</span></div><i>→</i><div><b>04</b><span>Predict</span></div><i>→</i><div><b>05</b><span>Explain</span></div>
+    </section>
+    <section class="workspace">
+      <article class="panel input-panel"><div class="panel-title"><div><p class="eyebrow">PATIENT FEATURES</p><h2>Run a risk analysis</h2></div><button class="ghost" id="sample">Load sample</button></div>
+        <form id="form">
+          <label>Age <input id="age" type="number" min="18" max="90" value="54"></label>
+          <label>Resting BP <input id="resting_bp" type="number" min="80" max="220" value="130"><small>mm Hg</small></label>
+          <label>Cholesterol <input id="cholesterol" type="number" min="100" max="600" value="245"><small>mg/dL</small></label>
+          <label>Maximum heart rate <input id="max_heart_rate" type="number" min="60" max="220" value="150"></label>
+          <label>Exercise-induced angina <select id="exercise_angina"><option value="0">No</option><option value="1">Yes</option></select></label>
+          <label>ST depression <input id="st_depression" type="number" min="0" max="7" step="0.1" value="1.0"></label>
+          <button class="primary" type="submit">Analyze indicators <span>→</span></button>
+        </form>
+      </article>
+      <article class="panel result-panel"><p class="eyebrow">MODEL OUTPUT</p><div id="empty"><div class="radar">⌁</div><h2>Ready for analysis</h2><p>Enter clinical indicators or load the sample profile to generate an educational model result.</p></div>
+        <div id="result" hidden><div class="score"><div><span>Estimated indicator score</span><strong id="score">—</strong></div><div class="badge" id="level">—</div></div><div class="meter"><i id="meter"></i></div>
+          <div class="result-grid"><div><span>Patient segment</span><strong id="segment">—</strong></div><div><span>Cluster</span><strong id="cluster">—</strong></div></div>
+          <div class="factors"><span>Leading model indicators</span><div id="factors"></div></div><p class="notice">Educational model output only. Not a diagnosis or medical advice.</p>
+        </div>
+      </article>
+    </section>
+    <section class="metrics"><div><span>Records processed</span><strong id="records">1,200</strong></div><div><span>Features validated</span><strong>6</strong></div><div><span>ROC–AUC</span><strong id="auc">—</strong></div><div><span>Data quality</span><strong>100%</strong></div></section>
+    <section class="about"><div><p class="eyebrow">ENGINEERING FOCUS</p><h2>From raw indicators to explainable output</h2></div><p>The demonstration combines reproducible data generation, schema validation, preprocessing, logistic regression, K-Means segmentation, REST API delivery, containerization, and health monitoring.</p></section>
+  </main>
+  <footer><span>Python · FastAPI · scikit-learn · Docker</span><span>Synthetic data · No PHI</span></footer>
+  <script src="/assets/app.js"></script>
+</body></html>
