@@ -2,6 +2,10 @@
 
 An interactive, recruiter-facing engineering demonstration that takes clinical indicators through validation, preprocessing, predictive modeling, patient segmentation, and explainable API delivery.
 
+[Open Live Demo](https://clinical-analytics-demo.onrender.com) · [Portfolio](https://logicharbor.dev) · [View Source](https://github.com/AnushKumarP/clinical-data-pipeline-analytics)
+
+> Render's free service may need a short warm-up after a period of inactivity.
+
 > **Educational demonstration:** The application uses a reproducible synthetic cohort. It contains no real patient records or protected health information (PHI). Model outputs are not diagnoses or medical advice.
 
 ## What the demo shows
